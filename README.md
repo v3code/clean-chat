@@ -8,6 +8,9 @@ apps (you can just copy .env.template file for dev purposes).
 
 You have to install docker and docker-compose on your machine,
 then type following command:
+
+```docker-compose -f docker-compose.dev.yml build``` - Only the first time
+
 ```docker-compose -f docker-compose.dev.yml up```
 
 After that, the app should be running [here](http://localhost:5173)

@@ -1,5 +1,7 @@
 FROM node:16
-COPY . /code/
 WORKDIR /code
-RUN npm i
+COPY ./package.json .
+COPY ./package-lock.json .
+RUN npm install
+COPY . .
 EXPOSE 5173
